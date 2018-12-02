@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: ubuntu:16.04
+From: ubuntu:18.04
 
 %labels
 MAINTAINER darachm
@@ -10,11 +10,11 @@ MAINTAINER darachm
     
 %post
 
-    apt-get -y update
-    apt-get -y install csvkit
+    apt -y update
+    apt -y install csvkit
 
 %test
 
-    /usr/bin/csvkit
+    /usr/bin/in2csv -h
 
 
