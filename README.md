@@ -1,3 +1,3 @@
 
-This container is for providing `ssconvert` for a nextflow pipeline.
+This container is for providing `csvkit` for a nextflow pipeline.
 

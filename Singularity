@@ -6,15 +6,15 @@ MAINTAINER darachm
 
 %help
 
-    This container is for providing `ssconvert` for a nextflow pipeline.
+    This container is for providing `csvkit` for a nextflow pipeline.
     
 %post
 
     apt-get -y update
-    apt-get -y install gnumeric
+    apt-get -y install csvkit
 
 %test
 
-    /usr/bin/ssconvert
+    /usr/bin/csvkit
 
 
